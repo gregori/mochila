@@ -2,7 +2,7 @@ import numpy as np
 import ga
 
 def main():
-    # Gerar população inicial
+    # Variáveis de configuração e controle
     num_genes = 6
     num_solutions = 8
     pop_size = (num_solutions, num_genes)
@@ -10,6 +10,8 @@ def main():
     num_parents_mating = 4
     weights = np.array([15, 3, 2, 5, 9, 20])
     points = np.array([15, 7, 10, 5, 8, 17])
+    
+    # Gerar população inicial
     population = gen_initial_population(pop_size)
 
     # Calcular o fitness
